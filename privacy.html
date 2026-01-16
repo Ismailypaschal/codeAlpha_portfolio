@@ -82,6 +82,46 @@
       <div
         class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
       >
+        <!-- Mobile component -->
+        <div
+          class="hidden md:hidden lg:hidden w-[90vw] flex flex-col justify-center absolute py-10 top-[75px] left-6 z-100000 bg-[#161b1e] font-display text-white rounded-xl"
+          id="mobile_menu"
+        >
+          <ul class="flex flex-col gap-6 justify-center w-full">
+            <li class="text-center">
+              <a
+                class="text-2xl text-center font-medium hover:text-primary transition-colors"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="text-center">
+              <a
+                class="text-2xl text-center font-medium hover:text-primary transition-colors"
+                href="projects.html"
+                >Projects</a
+              >
+            </li>
+            <li class="text-center">
+              <a
+                class="text-2xl text-center font-medium hover:text-primary transition-colors"
+                href="contact.html"
+                >Contact</a
+              >
+            </li>
+            <li class="text-center">
+              <a
+                href="https://drive.google.com/file/d/1-a7-Jq-gCCzYJcLfU_kHZQaxFk3vUh_W/view?usp=drivesdk"
+              >
+                <button
+                  class="bg-primary hover:bg-primary/90 text-background-dark px-5 py-2 rounded-lg font-bold text-sm transition-all"
+                >
+                  Hire Me
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
         <a href="index.html">
           <div class="flex items-center gap-2">
             <span class="material-symbols-outlined text-primary text-3xl"
@@ -131,6 +171,13 @@
             </button>
           </a>
         </nav>
+        <div class="md:hidden lg:hidden">
+          <img
+            class=""
+            id="hamburger"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMTNiNmVjIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMC43NSA3YS43NS43NSAwIDAgMS0uNzUuNzVINGEuNzUuNzUgMCAwIDEgMC0xLjVoMTZhLjc1Ljc1IDAgMCAxIC43NS43NW0wIDVhLjc1Ljc1IDAgMCAxLS43NS43NUg0YS43NS43NSAwIDAgMSAwLTEuNWgxNmEuNzUuNzUgMCAwIDEgLjc1Ljc1bTAgNWEuNzUuNzUgMCAwIDEtLjc1Ljc1SDRhLjc1Ljc1IDAgMCAxIDAtMS41aDE2YS43NS43NSAwIDAgMSAuNzUuNzUiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg=="
+          />
+        </div>
       </div>
     </header>
     <main class="flex flex-1 justify-center pt-[100px] pb-12 px-4">
@@ -320,7 +367,9 @@
         <div
           class="flex gap-8 text-sm font-medium text-slate-500 dark:text-slate-400"
         >
-          <a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+          <a class="hover:text-primary transition-colors" href="privacy.html"
+            >Privacy</a
+          >
           <a class="hover:text-primary transition-colors" href="terms.html"
             >Terms</a
           >
@@ -350,5 +399,6 @@
         htmlElement.classList.remove("dark");
       }
     </script>
+    <script src="index.js"></script>
   </body>
 </html>
